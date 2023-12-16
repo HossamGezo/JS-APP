@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+.container {
+  width: 80%;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #F0F0F0;
+}
+
+.card {
+  width: 800px;
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 10px;
+}
+.card-head {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.card-button {
+  border: none;
+  outline: none;
+  width: 150px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #129A67;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.card-button:hover {
+  background-color: rgba(18, 154, 103, 0.7);
+}
+.card-button:active {
+  background-color: #129A67;
+}
+.card-list {
+  cursor: pointer;
+  padding-inline-start: 15px;
+}
+.card-list__item {
+  margin-bottom: 10px;
+  padding-block: 5px;
+  border-radius: 3px;
+  list-style-type: none;
+  padding-inline-start: 10px;
+  transition: 0.1s linear;
+}
+.card-list__item.active {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.card-list__item:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  scale: 1.02;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,90 @@
+// Import All Using Helpers Directory
+@use "helpers/usinghelpers" as *;
+
+// Begining Of The Project
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial;
+  min-height: 100vh;
+  @include flex(null, null, center, center, null);
+}
+ul li {
+  list-style-type: none;
+}
+button, a {
+  cursor: pointer;
+}
+input, 
+button, 
+textarea,
+select {
+  font-family: inherit;
+}
+.container {
+  width: 80%;
+  padding: 0 10px;
+  margin: 0 auto;
+  @include flex(column, null, center, center, null);
+}
+
+// Begining Of The Project
+
+body {
+  background-color: color(gry-color-01);
+}
+
+.card {
+  width: 800px;
+  background-color: color(wht-color-01);
+  padding: 30px;
+  border-radius: 10px;
+  &-head {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  &-button {
+    border: none;
+    outline: none;
+    width: 150px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: color(grn-color-01);
+    color: color(wht-color-01);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    @include transition;
+    &:hover {
+      background-color: rgba(color(grn-color-01), 0.7);
+    }
+    &:active {
+      background-color: color(grn-color-01);
+    }
+  }
+  &-list {
+    cursor: pointer;
+    padding-inline-start: 15px;
+    &__item {
+      margin-bottom: 10px;
+      padding-block: 5px;
+      border-radius: 3px;
+      list-style-type: none;
+      padding-inline-start: 10px;
+      @include transition(0.1s);
+      &.active {
+        background-color: color(blk-color-01);
+        color: color(wht-color-01);
+      }
+      &:hover {
+        background-color: color(blk-color-01);
+        color: color(wht-color-01);
+        scale: 1.02;
+      }
+    }
+  }
+}
